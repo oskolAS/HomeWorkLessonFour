@@ -84,7 +84,7 @@ public class DataTypeOne {
                 " рублей. Годовой доход вырос на " + salaryIncreaseYearKristina +" рублей");
 
 
-
+        System.out.println("Постоянно забываю писать коментарии к Commit(((");
 
 
 
