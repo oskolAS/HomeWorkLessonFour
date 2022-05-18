@@ -24,36 +24,31 @@ public class DataTypeOne {
         byte weightMilkConstant = 105;
         short volumeMilkFull = 200;
         int fullWeightMilk = volumeMilkFull * weightMilkConstant / volumeMilkConstant;
-        //float fullWeightMilk = volumeMilkFull * weightMilkConstant / volumeMilkConstant;
         byte iceCreamPc = 2;
         byte weightOneIceCream = 100;
         int fullWeightIceCream = iceCreamPc * weightOneIceCream;
-        //float fullWeightIceCream = iceCreamPc * weightOneIceCream;
         byte eggPc = 4;
         byte weightOneEgg = 70;
-        //float fullWeightEgg = eggPc * weightOneEgg;
-       int fullWeightEgg = eggPc * weightOneEgg;
+        int fullWeightEgg = eggPc * weightOneEgg;
         float weightBreakfastGram = fullWeightBananas + fullWeightMilk + fullWeightIceCream + fullWeightEgg;
         int weightConstantKilo = 1000;
         float weightBreakfastKilo = weightBreakfastGram / weightConstantKilo;
-        //System.out.println("Вес спорт-завтрака составил = "+ weightBreakfastGram + " г.");
+        System.out.println("Вес спорт-завтрака в граммах = " + weightBreakfastGram + " гр.");
         System.out.println("Вес спорт-завтрака составил = "+ weightBreakfastKilo + " кг.");
 
 
         //Задача №4
         byte excessWeightKilo = 7;
         short kiloGram = 1000;
-        float weightLossGramDay1 = 250;
-        float weightLossKiloDay1 = weightLossGramDay1 / kiloGram;
-        float dayBeforeNormWeight1 = excessWeightKilo / weightLossKiloDay1;
+        int weightLossGramDay1 = 250;
+        int dayBeforeNormWeight1 = excessWeightKilo * kiloGram / weightLossGramDay1;
         System.out.println ("Спортсмен похудеет на 7 кг. теряя по 250 г. в день  за " + dayBeforeNormWeight1 + " дней." );
-        float weightLossGramDay2 = 500;
-        float weightLossKiloDay2 = weightLossGramDay2 / kiloGram;
-        float dayBeforeNormWeight2 = excessWeightKilo / weightLossKiloDay2;
+        int weightLossGramDay2 = 500;
+        int dayBeforeNormWeight2 = excessWeightKilo * kiloGram / weightLossGramDay2;
+       // float dayBeforeNormWeight2 = excessWeightKilo / weightLossKiloDay2;
         System.out.println ("Спортсмен похудеет на 7 кг. теряя по 500 г. в день  за " + dayBeforeNormWeight2 + " дней." );
-        float weightLossKiloDayAverage = ( weightLossKiloDay1 + weightLossKiloDay2) / 2;
-        float dayBeforeNormWeightAverage = excessWeightKilo / weightLossKiloDayAverage;
-        System.out.println ("Спортсмен похудеет на 7 кг. " + dayBeforeNormWeightAverage  + " день." );
+       int dayBeforeNormWeightAverage = excessWeightKilo * kiloGram / ((weightLossGramDay1 + weightLossGramDay2) / 2);
+       System.out.println ("Спортсмен похудеет на 7 кг. " + dayBeforeNormWeightAverage  + " дней." );
 
 
         //Задача №5
@@ -84,7 +79,7 @@ public class DataTypeOne {
                 " рублей. Годовой доход вырос на " + salaryIncreaseYearKristina +" рублей");
 
 
-        System.out.println("Постоянно забываю писать коментарии к Commit(((");
+
 
 
 
